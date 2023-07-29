@@ -9,20 +9,26 @@ const TopBar = () => {
     <div className="flex items-center justify-between px-5 py-4 bg-grayfc">
       <div className="flex items-center gap-[82px] flex-1">
         <Link href="/" className="flex items-center gap-3">
-          <Image width={173} height={35} src="/logo-full.png " alt="Yariga" />
+          <Image
+            width={173}
+            height={35}
+            priority
+            src="/logo-full.png "
+            alt="Yariga"
+          />
         </Link>
         <div className="px-[10px] rounded-lg bg-grayf4 flex items-center gap-2 flex-[1_1_405px] h-[38px]">
-          <IconSearch></IconSearch>
+          <IconSearch />
           <input
             type="text"
             placeholder="Search Property, Customer etc"
-            className="w-full text-xs font-normal bg-transparent outline-none text-primary placeholder:text-gray80 "
+            className="w-full text-xs font-normal bg-transparent outline-none text-primary placeholder:text-gray80"
           />
         </div>
       </div>
       <div className="flex items-center flex-shrink-0 gap-5">
         <span className="flex-shrink-0 ml-4">
-          <IconNotification></IconNotification>
+          <IconNotification />
         </span>
         <div className="flex items-center flex-shrink-0 gap-[10px]">
           <Image
